@@ -1,0 +1,27 @@
+.home{
+    background-color: #FFDFD6;
+    
+    }
+    .courses {
+    background-color: #ffff
+    }
+    
+    .profile {
+    background-color: #ffff
+    }
+    
+    .menuBox {
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA ;
+    border-radius: 48px;
+    width:304px;
+    height: 248px;
+    
+    }
+    .home,.courses, .profile {
+    margin: 16px 10px 0px 25px;
+    padding: 10px 6px 0px 10px;
+    width: 240px;
+    height: 40px;
+    border-radius: 20px
+    }
