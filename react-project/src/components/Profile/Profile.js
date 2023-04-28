@@ -1,19 +1,18 @@
-import { IoIosArrowForward, IoIosPerson } from "react-icons/io";
 import "./Profile.css";
+import { ReactComponent as ArrowIcon } from "../../assets/arrow_icon.svg";
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div className="profileBox">
       <div className="userPhoto">
-        {" "}
-        <IoIosPerson size={60} />
+        <img src={props.photo} alt="Profile Pic"></img>
       </div>
       <div className="userInfo">
-        <div className="userName">John Smith</div>
-        <div className="userEmail">johnsmith@gmail.com</div>
+        <div className="userName">{props.userName}</div>
+        <div className="userEmail">{props.email}</div>
       </div>
       <div className="userArrow">
-        <IoIosArrowForward size={20} />
+        <ArrowIcon />
       </div>
     </div>
   );

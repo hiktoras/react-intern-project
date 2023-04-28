@@ -1,0 +1,14 @@
+
+.coursesBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px;
+    
+}
+    
+
+
+
+
+

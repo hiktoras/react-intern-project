@@ -1,77 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&family=Overpass&display=swap');
-
-.home{
-background-color: #FFDFD6;
-
-}
-.courses {
-background-color: #ffff
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
-.profile {
-background-color: #ffff
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.menuBox {
-box-sizing: border-box;
-border: 1px solid #EAEAEA ;
-border-radius: 48px;
-width:304px;
-height: 248px;
-
-}
-.home,.courses, .profile {
-margin: 16px 10px 0px 25px;
-padding: 10px 6px 0px 10px;
-width: 240px;
-height: 40px;
-border-radius: 20px
+.column1 {
+  display: flex;
+  flex-direction: column;
+  width: 304px;
+  margin-left: 50px;
+  margin-top: 30px;
 }
 
-.profileBox {
-display: flex;
-flex-direction: row;
-box-sizing: border-box;
-border: 1px solid #EAEAEA ;
-width: 304px;
-height: 96px;
-border-radius: 32px;
-margin-bottom: 30px;
+.column2 {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  margin-left: 200px;
+  margin-right: 100px;
 }
 
-.userPhoto {
-
-
-}
-.userInfo {
-    padding: 15px;
-}
-
-.userName {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-
-
-}
-
-.userEmail{
-font-family: "Montserrat";
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-color: #6D6D78;
-
-
-
-
-}
-.userArrow {
-margin-top: 27px;
-margin-left:20px
- 
- 
+.column3 {
+  display: flex;
+  margin-left: 200px;
+  margin-top: 100px;
 }

@@ -1,27 +1,12 @@
-import { TiHomeOutline, TiBookmark, TiUserOutline } from "react-icons/ti";
 import "./NavMenu.css";
+import NavMenuItem from "../NavMenuItem/NavMenuItem";
 
 const NavMenu = () => {
   return (
     <div className="menuBox">
-      <div className="home">
-        <span>
-          <TiHomeOutline />
-        </span>
-        <b> Home</b>
-      </div>
-      <div className="courses">
-        <span>
-          <TiBookmark />
-        </span>
-        <b> My Courses</b>
-      </div>
-      <div className="profile">
-        <span>
-          <TiUserOutline />
-        </span>
-        <b> Profile</b>
-      </div>
+      <NavMenuItem title="Home" classText="selectedNav" />
+      <NavMenuItem title="My Courses" classText="unselectedNav" />
+      <NavMenuItem title="Profile" classText="unselectedNav" />
     </div>
   );
 };
