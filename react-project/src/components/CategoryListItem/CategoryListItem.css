@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&family=Overpass&display=swap");
+
+.selectedButton {
+  border: 2px solid #52c3ff;
+  border-radius: 40px;
+  width: 80px;
+  height: 130px;
+  background-color: #ffff;
+}
+
+.selectedCircle {
+  border: 1px solid #eaeaea;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  bottom: 24px;
+  position: relative;
+  background-color: #52c3ff;
+}
+.unselectedButton {
+  border-radius: 40px;
+  width: 80px;
+  height: 130px;
+  background-color: #ffff;
+  border: 1px solid #eaeaea;
+}
+
+.unselectedCircle {
+  border: 1px solid #eaeaea;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  bottom: 24px;
+  position: relative;
+}
+
+.categoryText {
+  bottom: 5px;
+  position: relative;
+}
+
+.categoryIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 18px;
+  position: relative;
+}
+
+.selectedText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #172239;
+}
+
+.unselectedText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #6d6d78;
+}
