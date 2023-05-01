@@ -1,6 +1,7 @@
 .mainText {
   display: flex;
   flex-direction: column;
+  margin-left: 25px;
 }
 
 .hello {

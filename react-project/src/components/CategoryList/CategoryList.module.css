@@ -3,7 +3,6 @@
   flex-direction: row;
   flex: wrap;
   border-radius: 100%;
-  justify-content: space-between;
   bottom: 50px;
   position: relative;
 }

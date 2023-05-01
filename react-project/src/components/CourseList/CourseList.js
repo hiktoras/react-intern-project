@@ -1,4 +1,4 @@
-import "./CourseList.css";
+import styles from "./CourseList.module.css";
 import CourseListItem from "../CourseListItem/CourseListItem";
 import courseJs from "../../assets/photos/coursejs.jpg";
 import coursePp from "../../assets/photos/powerp.jpg";
@@ -6,7 +6,7 @@ import courseDs from "../../assets/photos/courseds.jpg";
 import courseDd from "../../assets/photos/coursedd.jpg";
 const CourseList = (props) => {
   return (
-    <section className="coursesBox">
+    <section className={styles.coursesBox}>
       <CourseListItem
         photo="assest/photos/coursejs.png"
         time="-3 h 15 min"
@@ -17,7 +17,7 @@ const CourseList = (props) => {
       <CourseListItem
         time="-5 h 30 min"
         title="Powerpoint"
-        text="Enhance your presentaion skills."
+        text="Enhance your presentaion."
         image={coursePp}
       />
       <CourseListItem

@@ -1,0 +1,18 @@
+.menuBox {
+  box-sizing: border-box;
+  border: 1px solid #eaeaea;
+  border-radius: 48px;
+  width: 304px;
+  height: 248px;
+  margin-bottom: 400px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  top: 10px;
+  right: 40px;
+  position: relative;
+}

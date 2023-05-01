@@ -1,13 +1,19 @@
-import "./NavMenu.css";
+import styles from "./NavMenu.module.css";
 import NavMenuItem from "../NavMenuItem/NavMenuItem";
 
 const NavMenu = () => {
   return (
-    <div className="menuBox">
-      <NavMenuItem title="Home" classText="selectedNav" />
-      <NavMenuItem title="My Courses" classText="unselectedNav" />
-      <NavMenuItem title="Profile" classText="unselectedNav" />
-    </div>
+    <ul className={styles.menuBox}>
+      <li>
+        <NavMenuItem title="Home" classText="selectedNav" />
+      </li>
+      <li>
+        <NavMenuItem title="Profile" classText="unselectedNav" />
+      </li>
+      <li>
+        <NavMenuItem title="My Courses" classText="unselectedNav" />
+      </li>
+    </ul>
   );
 };
 

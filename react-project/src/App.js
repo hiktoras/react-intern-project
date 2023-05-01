@@ -10,29 +10,39 @@ import { Button } from "reactstrap";
 
 function App() {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="column1">
+    <main className="main">
+      <aside className="column1">
+        <header>
           <Profile
             userName="John Smith"
             email="johnsmith@gmail.com"
             photo="/profile.png"
           />
+        </header>
+        <nav>
           <NavMenu />
-          <AuthButton text="Log Out" />
-        </div>
+        </nav>
+        <footer>
+          <AuthButton text="Log Out" />{" "}
+        </footer>
+      </aside>
 
-        <div className="column2">
+      <section className="column2">
+        <header>
           <MainTitle />
+        </header>
+        <article>
           <CategoryList />
+        </article>
+        <article>
           <CourseList />
-        </div>
+        </article>
+      </section>
 
-        <div className="column3">
-          <Notifications />
-        </div>
-      </div>
-    </div>
+      <aside className="column3">
+        <Notifications />
+      </aside>
+    </main>
   );
 }
 

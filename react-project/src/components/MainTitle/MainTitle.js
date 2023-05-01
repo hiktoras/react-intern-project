@@ -1,12 +1,12 @@
-import "./MainTitle.css";
+import styles from "./MainTitle.module.css";
 
 const MainTitle = () => {
   return (
-    <div className="mainText">
-      <p className="hello">Hello,</p>
-      <p className="john">John Smith</p>
-      <p className="coursesTitle">Courses</p>
-    </div>
+    <article className={styles.mainText}>
+      <p className={styles.hello}>Hello,</p>
+      <p className={styles.john}>John Smith</p>
+      <p className={styles.coursesTitle}>Courses</p>
+    </article>
   );
 };
 

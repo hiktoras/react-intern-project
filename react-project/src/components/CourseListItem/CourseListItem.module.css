@@ -1,0 +1,47 @@
+.courseContainer {
+  border: 1px solid #eaeaea;
+  border-radius: 32px;
+  box-sizing: border-box;
+  width: 229px;
+  height: 297px;
+  background-color: #ffff;
+  margin: 10px;
+}
+
+.coursePhoto {
+  display: flex;
+  right: 6px;
+  bottom: 48px;
+  position: relative;
+  width: 229px;
+  height: 137px;
+}
+
+.courseTime {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6d6d78;
+}
+
+.courseTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+
+  color: #172239;
+}
+
+.courseText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6d6d78;
+  text-align: left;
+}

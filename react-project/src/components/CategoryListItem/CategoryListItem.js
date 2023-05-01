@@ -1,8 +1,8 @@
-import "./CategoryListItem.css";
 import { ReactComponent as CategoryIconNew } from "../../assets/newcategory_icon.svg";
 import { ReactComponent as CategoryIconPopular } from "../../assets/popularcategory_icon.svg";
 import { ReactComponent as CategoryIconFree } from "../../assets/freecategory_icon.svg";
 import { ReactComponent as CategoryIconPro } from "../../assets/procategory_icon.svg";
+import styles from "./CategoryListItem.module.css";
 
 function Icon(text) {
   switch (text) {
@@ -19,13 +19,12 @@ function Icon(text) {
 
 const CategoryListItem = (props) => {
   return (
-    <section>
-      <button className={props.classButton}>
-        <div className="categoryIcon">{Icon(props.text)}</div>
-        <div className={props.classCircle}></div>
-        <div className={props.classText}>{props.text}</div>
-      </button>
-    </section>
+    <button className={styles[props.classButton]}>
+      <span className={styles[props.classCircle]}>
+        <div className={styles.categoryIcon}>{Icon(props.text)}</div>
+      </span>
+      <span className={styles[props.classText]}>{props.text}</span>
+    </button>
   );
 };
 

@@ -1,9 +1,8 @@
-import "./CategoryList.css";
+import styles from "./CategoryList.module.css";
 import CategoryListItem from "../CategoryListItem/CategoryListItem";
-
 const CategoryList = (props) => {
   return (
-    <section className="categories">
+    <section className={styles.categories}>
       <CategoryListItem
         text="New"
         classButton="selectedButton"

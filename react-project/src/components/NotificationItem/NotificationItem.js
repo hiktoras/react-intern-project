@@ -1,4 +1,4 @@
-import "./NotificationItem.css";
+import styles from "./NotificationItem.module.css";
 import { ReactComponent as AchievementIcon } from "../../assets/achievement_icon.svg";
 import { ReactComponent as PurchaseIcon } from "../../assets/purchase_icon.svg";
 import { ReactComponent as MessagesIcon } from "../../assets/messages_icon.svg";
@@ -19,24 +19,24 @@ function Icon(title) {
 function FrameClassname(title) {
   switch (title) {
     case "New Achievement":
-      return "notifIconFrame achievementFrame";
+      return styles.achievementFrame;
     case "Complete Purchase":
-      return "notifIconFrame purchaseFrame";
+      return styles.purchaseFrame;
     case "Unread Messages":
-      return "notifIconFrame messagesFrame";
+      return styles.messagesFrame;
     default:
-      return "notifIconFrame coursesFrame";
+      return styles.coursesFrame;
   }
 }
 const NotificationItem = (props) => {
   return (
-    <div className="notifContainer">
+    <div className={styles.notifContainer}>
       <div className={FrameClassname(props.title)}>
-        <div className="notifIcon">{Icon(props.title)}</div>
+        <div className={styles.notifIcon}>{Icon(props.title)}</div>
       </div>
-      <div className="notifContent">
-        <div className="notifTitle">{props.title}</div>
-        <div className="notifText">
+      <div className={styles.notifContent}>
+        <div className={styles.notifTitle}>{props.title}</div>
+        <div className={styles.notifText}>
           <p>{props.text}</p>
           <p>{props.date}</p>
         </div>

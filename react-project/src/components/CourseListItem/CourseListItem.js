@@ -1,17 +1,16 @@
-import "./CourseListItem.css";
-import courseJs from "../../assets/photos/coursejs.jpg";
+import styles from "./CourseListItem.module.css";
 
 const CourseListItem = (props) => {
   return (
     <section>
-      <button className="courseContainer">
-        <div className="coursePhoto">
+      <button className={styles.courseContainer}>
+        <div className={styles.coursePhoto}>
           <img src={props.image} alt="Profile Pic"></img>
         </div>
 
-        <div className="courseTime">{props.time}</div>
-        <div className="courseTitle">{props.title}</div>
-        <div className="courseText">{props.text}</div>
+        <div className={styles.courseTime}>{props.time}</div>
+        <div className={styles.courseTitle}>{props.title}</div>
+        <div className={styles.courseText}>{props.text}</div>
       </button>
     </section>
   );
