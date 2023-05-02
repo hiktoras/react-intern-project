@@ -6,7 +6,6 @@ import Notifications from "./components/Notifications/Notifications";
 import MainTitle from "./components/MainTitle/MainTitle";
 import CategoryList from "./components/CategoryList/CategoryList";
 import CourseList from "./components/CourseList/CourseList";
-import { Button } from "reactstrap";
 
 function App() {
   return (
@@ -23,7 +22,7 @@ function App() {
           <NavMenu />
         </nav>
         <footer>
-          <AuthButton text="Log Out" />{" "}
+          <AuthButton text="Log Out" />
         </footer>
       </aside>
 
