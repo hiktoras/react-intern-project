@@ -4,7 +4,7 @@ import NotificationItem from "../NotificationItem/NotificationItem";
 const Notifications = () => {
   return (
     <div>
-      <p className={styles.notificationsTitle}>Notifications</p>
+      <p className={styles.notificationsTitle}>Notifications 🔔</p>
       <NotificationItem
         title="New Courses"
         text="We have released 10 new courses just for you."
